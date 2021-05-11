@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jpT-g7-8Cg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selamat-->
+        <scene sceneID="5Hv-NC-quv">
+            <objects>
+                <viewController storyboardIdentifier="congratID" id="6KT-i6-xMO" customClass="CongratController" customModule="Moys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gB-KM-dxk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vK-A1-tb1">
+                                <rect key="frame" x="17" y="111" width="380" height="730"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i6Z-S1-L8U">
+                                        <rect key="frame" x="12" y="8" width="356" height="450"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="450" id="lPb-7r-DO7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zou-fR-1mI">
+                                        <rect key="frame" x="12" y="466" width="356" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="e5H-yO-oek"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-bt-d48">
+                                        <rect key="frame" x="118" y="614" width="144" height="47"/>
+                                        <color key="backgroundColor" red="1" green="0.69019607839999997" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="HPX-j2-yiE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <state key="normal" title="Selesai">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonBackHome:" destination="6KT-i6-xMO" eventType="touchUpInside" id="Ffq-Ex-LOf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="i6Z-S1-L8U" firstAttribute="leading" secondItem="1vK-A1-tb1" secondAttribute="leading" constant="12" id="5ze-iy-B6w"/>
+                                    <constraint firstAttribute="trailing" secondItem="KJf-bt-d48" secondAttribute="trailing" constant="118" id="9u2-2e-k57"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zou-fR-1mI" secondAttribute="trailing" constant="12" id="cZG-Cx-xoG"/>
+                                    <constraint firstAttribute="trailing" secondItem="i6Z-S1-L8U" secondAttribute="trailing" constant="12" id="dG5-sy-ZBg"/>
+                                    <constraint firstItem="KJf-bt-d48" firstAttribute="leading" secondItem="1vK-A1-tb1" secondAttribute="leading" constant="118" id="e5f-Lj-m7u"/>
+                                    <constraint firstItem="Zou-fR-1mI" firstAttribute="leading" secondItem="1vK-A1-tb1" secondAttribute="leading" constant="12" id="fUM-0W-nDs"/>
+                                    <constraint firstItem="Zou-fR-1mI" firstAttribute="top" secondItem="i6Z-S1-L8U" secondAttribute="bottom" constant="8" id="iee-Nw-evy"/>
+                                    <constraint firstItem="i6Z-S1-L8U" firstAttribute="top" secondItem="1vK-A1-tb1" secondAttribute="top" constant="8" id="jsg-zu-YTF"/>
+                                    <constraint firstItem="KJf-bt-d48" firstAttribute="top" secondItem="Zou-fR-1mI" secondAttribute="bottom" constant="8" id="zL8-5s-sbc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fN4-o0-pdg"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.43529411759999997" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1vK-A1-tb1" firstAttribute="top" secondItem="fN4-o0-pdg" secondAttribute="top" constant="23" id="GYg-nJ-kGV"/>
+                            <constraint firstItem="fN4-o0-pdg" firstAttribute="bottom" secondItem="1vK-A1-tb1" secondAttribute="bottom" constant="21" id="gi0-xH-NqH"/>
+                            <constraint firstItem="fN4-o0-pdg" firstAttribute="trailing" secondItem="1vK-A1-tb1" secondAttribute="trailing" constant="17" id="iaG-kr-gcB"/>
+                            <constraint firstItem="1vK-A1-tb1" firstAttribute="leading" secondItem="fN4-o0-pdg" secondAttribute="leading" constant="17" id="zMh-LE-Z5F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Selamat" id="paG-hX-nvf"/>
+                    <connections>
+                        <outlet property="buttonToHome" destination="KJf-bt-d48" id="r85-BR-ec9"/>
+                        <outlet property="congratsDesc" destination="Zou-fR-1mI" id="2zy-ja-1Rq"/>
+                        <outlet property="congratsImage" destination="i6Z-S1-L8U" id="vv3-LW-VTg"/>
+                        <outlet property="congratsView" destination="1vK-A1-tb1" id="PCe-4D-fih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJz-KJ-XbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2839.130434782609" y="50.892857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jJe-Iy-m5T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jpT-g7-8Cg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HZ5-aG-SZS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.69019607839999997" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6KT-i6-xMO" kind="relationship" relationship="rootViewController" id="hLJ-hl-0oV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83b-7s-kt3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.985507246377" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+</document>
